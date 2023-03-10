@@ -1,0 +1,62 @@
+% TODO fill in your paper number when you get it
+\newcommand{\PaperNumber}{XXX}
+
+\documentclass[sigconf,anonymous]{acmart}
+
+\input{preamble}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Paper-specific commands {{{
+
+% System name (if applicable)
+\newcommand{\name}{$\mathsf{SystemName}$\xspace} % middle of sentence
+\newcommand{\Name}{$\mathsf{SystemName}$\xspace} % start of sentence
+
+% Per-author comment commands (they don't appear if you "make finalized")
+% 	Colors: black, blue, brown, cyan, darkgray, gray, green, lightgray, lime
+% 	magenta, olive, orange, pink, purple, red, teal, violet, white,	yellow
+\NewCommentType{todo}{red}{TODO}
+\NewCommentType{dml}{violet}{dml}
+
+% }}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TODO fill in your title here
+\title{Crowdsourcing Server-side Training for New Geneva Strategies}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Authors {{{
+
+% Not needed; anonymous submission
+
+% }}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{intro}
+% \input{intro}
+% \end{intro}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{intro}
+\input{intro}
+\end{intro}
+% \input{background}
+% \input{related}
+\begin{methodology}
+\input{methodology}
+\end{methodology}
+% \input{results}
+% \input{conclusion}
+\begin{challenges}
+\input{challenges}
+\end{challenges}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{conferences,refs}
+
+\end{document}

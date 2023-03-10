@@ -1,0 +1,9 @@
+% Methodology
+
+We will build a webpage that users will visit and perform censorship evasion strategies using the Geneva system. The user will go through the information regarding their participation in the study and how their data will be used. Provided that they consent to the study, the system will spin up the server-side training pool that users will send requests to. The client will be debriefed at the end of the server-side training on what Geneva strategies were successful during the training. 
+
+The technologies that we will use to build our webpage may limit our ability to control the Host HTTP header and SNI fields since they will be set for us by the browser; the Host HTTP header and SNI information cannot be modified as we do not have direct access to the network stack. This limitation prevents us from seeing where the traffic is going. 
+
+Our initial design would allow us to control testing our censorship by triggering it with keywords. We could experiment with triggering censorship with several variations in URLS that have already proven to be censored and modify them with some regular expressions. However, we could cause collateral damage if this is implemented poorly by the censor. Instead of testing via keywords, we plan on registering some domain names that contain other censored domains in them. We will then have those domains point to our server, allowing us to make legitimate requests to them and trigger the censors.
+
+Our plan is to avoid client participation as much as possible as we find instances of overblocking. A breach of confidentiality can result in threats to their exposure to their nation-state regimes. We can accomplish this with an unmodified browser that eliminates the need to install any extra software, browser extension, or web plug-in. By doing, Geneva will be more widely available and safer for users to use.
